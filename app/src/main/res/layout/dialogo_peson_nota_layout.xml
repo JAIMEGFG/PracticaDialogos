@@ -2,13 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <EditText
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="0"
-        android:inputType="number"
-        android:id="@+id/edit_dialogo_nota">
-    </EditText>
+        android:id="@+id/spinnerDialogo">
+    </Spinner>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         DialogoContinuar.onDialogoContinuarListener,
         DatePickerDialog.OnDateSetListener,
         TimePickerDialog.OnTimeSetListener,
-        DialogoNota.OnDialogoNotaListener
+        DialogoNota.onRespuestaListener
          {
 
     TextView notas;
@@ -83,4 +83,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         DialogoNota dialogoNota = new DialogoNota();
         dialogoNota.show(getSupportFragmentManager(),"continuar");
     }
+
+             @Override
+             public void onRespuestaNota(int nota) {
+                 notas.setText(nota);
+             }
          }
